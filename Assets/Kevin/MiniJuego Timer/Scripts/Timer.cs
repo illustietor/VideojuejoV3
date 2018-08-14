@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Timer : MonoBehaviour {
+    public Image fondo;
+    public Sprite preparados, go, playerMuerto, botMuerto;
 
     bool Go;
-    float tiempo;
+    public float tiempo;
 
 	void Start () {
         Temporizador();
@@ -32,19 +35,25 @@ public class Timer : MonoBehaviour {
         Debug.Log("STEADY: " + Time.time);
         yield return new WaitForSeconds(Random.Range(1f, 5f));
         Debug.Log("GO");
+        fondo.sprite = go;
         Go = true;
+        
     }
 
     void Pulsar()
     {
-        if (!Go && Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Space) && tiempo >= 0.4f)
+        if (!Go && Input.GetKeyDown(KeyCode.Space) || tiempo >= 0.4f)
         {
             Debug.Log("Has perdido");
+            fondo.sprite = playerMuerto;
+            Time.timeScale = 0;
         }
 
         else if (Go && Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Space) && tiempo <= 0.4f)
         {
             Debug.Log("Has ganado");
+            fondo.sprite = botMuerto;
+            Time.timeScale = 0;
         }
     }
 }

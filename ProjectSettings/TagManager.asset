@@ -7,6 +7,8 @@ TagManager:
   - Cubo
   - NPC
   - FungusObject
+  - cubo
+  - Zanahoria
   layers:
   - Default
   - TransparentFX
