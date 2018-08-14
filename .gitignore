@@ -1,6 +1,16 @@
+<<<<<<< HEAD
 Library/
 Temp/
 Packages/
 Assembly-CSharp.csproj
 Assembly-CSharp-Editor.csproj
 VideojuejoV3.sln
+=======
+VideojuejoV3.sln
+.vs/
+Library/
+obj/
+Packages/
+Assembly-CSharp.csproj
+Assembly-CSharp-Editor.csproj
+>>>>>>> ec5ea38141c75f7cb597743cd89aa1e3f1bcafc4

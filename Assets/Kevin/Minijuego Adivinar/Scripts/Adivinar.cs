@@ -8,8 +8,8 @@ public class Adivinar : MonoBehaviour
 {
 
     public Image imagen;
-    public Sprite circulo, cuadrado, pentagono, peneKawaii, linea, triangulo;
-    Sprite[] imagenes = new Sprite[6];
+    public Sprite sandia, manzana, sandiaPodrida, manzanaPodrida, platanoPodrido, platano, lata;
+    Sprite[] imagenes = new Sprite[7];
 
     float tiempo;
     public float tiempoTotal;
@@ -39,7 +39,7 @@ public class Adivinar : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            if (imagen.sprite == triangulo) //Elige la primera opcion (Triangulo)
+            if (imagen.sprite == platano) //Elige la primera opcion (Triangulo)
             {
                 puntuacion++;
                 AleatorizarImagenes();
@@ -56,7 +56,7 @@ public class Adivinar : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.UpArrow)) //Elige la segunda opcion (Circulo)
         {
-            if (imagen.sprite == circulo)
+            if (imagen.sprite == sandia)
             {
                 puntuacion++;
                 AleatorizarImagenes();
@@ -72,7 +72,7 @@ public class Adivinar : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.RightArrow)) //Elige la tercera opcion (Cuadrado)
         {
-            if (imagen.sprite == cuadrado)
+            if (imagen.sprite == manzana)
             {
                 puntuacion++;
                 AleatorizarImagenes();
@@ -88,7 +88,7 @@ public class Adivinar : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.DownArrow)) //Elige la cuarta opcion (Mierda Pura)
         {
-            if (imagen.sprite == linea || imagen.sprite == peneKawaii || imagen.sprite == pentagono)
+            if (imagen.sprite == platanoPodrido || imagen.sprite == manzanaPodrida || imagen.sprite == sandiaPodrida || imagen.sprite == lata)
             {
                 puntuacion++;
                 AleatorizarImagenes();
@@ -108,12 +108,13 @@ public class Adivinar : MonoBehaviour
     {
         //Al inicio del juego se activa una imagen
 
-        imagenes[0] = triangulo;
-        imagenes[1] = circulo;
-        imagenes[2] = cuadrado;
-        imagenes[3] = linea;
-        imagenes[4] = peneKawaii;
-        imagenes[5] = pentagono;
+        imagenes[0] = platano;
+        imagenes[1] = sandia;
+        imagenes[2] = manzana;
+        imagenes[3] = platanoPodrido;
+        imagenes[4] = manzanaPodrida;
+        imagenes[5] = sandiaPodrida;
+        imagenes[6] = lata;
     }
 
     void Update()

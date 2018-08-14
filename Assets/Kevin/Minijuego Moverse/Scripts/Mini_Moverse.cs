@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Mini_Moverse : MonoBehaviour {
-    public Rigidbody2D miRigidBody;
+    public Rigidbody miRigidBody;
 
     void Start () {
 		

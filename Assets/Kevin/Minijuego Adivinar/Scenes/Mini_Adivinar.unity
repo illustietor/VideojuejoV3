@@ -633,7 +633,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Cuadrado
+  m_text: Manzana
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -701,7 +701,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 920029998}
-    characterCount: 8
+    characterCount: 7
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -788,7 +788,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Mierda Pura
+  m_text: Basura
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -856,10 +856,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1215678924}
-    characterCount: 11
+    characterCount: 6
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 2
+    spaceCount: 0
+    wordCount: 1
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -943,7 +943,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Circulo
+  m_text: Sandia
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1011,7 +1011,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1281385600}
-    characterCount: 7
+    characterCount: 6
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -1077,8 +1077,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 142.9}
-  m_SizeDelta: {x: -1455.3, y: -627.6}
+  m_AnchoredPosition: {x: 0, y: 190.5}
+  m_SizeDelta: {x: -1064.0999, y: -509.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1587426039
 MonoBehaviour:
@@ -1092,7 +1092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1126,12 +1126,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imagen: {fileID: 1587426039}
-  circulo: {fileID: 21300000, guid: 18f84bd5334e19249829a9c09bfbb460, type: 3}
-  cuadrado: {fileID: 21300000, guid: 27e1ac948210c834e928f10ebf1593ff, type: 3}
-  pentagono: {fileID: 21300000, guid: 2ffe51113f1da4d4c8966138a99be2ff, type: 3}
-  peneKawaii: {fileID: 21300000, guid: f0d80ff16f748b7499adbbd91059cd55, type: 3}
-  linea: {fileID: 21300000, guid: 08c5cc149bb44d84b9d1264220f6be73, type: 3}
-  triangulo: {fileID: 21300000, guid: 79a1bc56b938a554599069523a77ec4f, type: 3}
+  sandia: {fileID: 21300000, guid: c5674599064d09c4d90ee79719b717c2, type: 3}
+  manzana: {fileID: 21300000, guid: 1e9db4a96d05b6a4287788d5a0ae5b5c, type: 3}
+  sandiaPodrida: {fileID: 21300000, guid: de179d2560330ec4aa5c142ee59c3ab0, type: 3}
+  manzanaPodrida: {fileID: 21300000, guid: a618202f58bc1d1459943f8ef3798bbe, type: 3}
+  platanoPodrido: {fileID: 21300000, guid: 21dcbc8863fca354b81195a1f70fc96f, type: 3}
+  platano: {fileID: 21300000, guid: 58a3eca6987e0db46b3cf1e851c81482, type: 3}
+  lata: {fileID: 21300000, guid: 3338ef341d23c8f4fb3a132a06a1c619, type: 3}
   tiempoTotal: 0
   puntuacion: 0
 --- !u!1 &1621372580
@@ -1613,7 +1614,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Triangulo
+  m_text: Platano
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1681,7 +1682,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1876363474}
-    characterCount: 9
+    characterCount: 7
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
