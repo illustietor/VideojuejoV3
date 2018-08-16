@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjetoQueCaen : MonoBehaviour {
-    Zanahoria creadorZanahoria;
+public class InstanciadorZanahorias : MonoBehaviour {
+    public GameObject objetoACrear;
 
     float tiempo;
 
@@ -16,7 +16,7 @@ public class ObjetoQueCaen : MonoBehaviour {
 
         if (tiempo >= 1)
         {
-            creadorZanahoria.Instacia();
+            Instantiate(objetoACrear, new Vector3(Random.Range(-10f,10f), 8f, -0.5f), Quaternion.identity);
             tiempo = 0;
         }
 	}
