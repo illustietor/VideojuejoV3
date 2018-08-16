@@ -17,4 +17,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Kevin/Minijuego PulsarMuchasVeces/Scenes/Juego.unity
     guid: 4bfc8e1946003fe4c9e7807afed0fba1
+  - enabled: 1
+    path: Assets/EL_JUEGO (No tocar)/MenusTochos/MenuPrincipal.unity
+    guid: 47b773310bb3c7e48a2b8644ed676e33
+  - enabled: 1
+    path: Assets/EL_JUEGO (No tocar)/MenusTochos/MenuMinijuegos.unity
+    guid: 79d7e195e478e4c45ab4daa9e07fb880
+  - enabled: 1
+    path: Assets/EL_JUEGO (No tocar)/3D/EscenaOficinaV0.1.unity
+    guid: 93439d8c710d50c46a8230e1aae03180
+  - enabled: 1
+    path: Assets/Kevin/Minijuego Topos/Scenes/Mini_Topos.unity
+    guid: 2a3db9e47a230584093446aecd7e6186
+  - enabled: 1
+    path: Assets/Kevin/Minijuego Cubitos/Scenes/Mini_Cubitos.unity
+    guid: c109c16c74bd1ef4e91f98915f298003
+  - enabled: 1
+    path: Assets/Sara/Escenas/JuegoKala.unity
+    guid: e173ace41e5ade74f819db20d05c129e
   m_configObjects: {}
