@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class Adivinar : MonoBehaviour
 {
-
+    public GameObject error;
+    public GameObject acierto;
     public Image imagen;
     public Sprite sandia, manzana, sandiaPodrida, manzanaPodrida, platanoPodrido, platano, lata;
     Sprite[] imagenes = new Sprite[7];
@@ -23,7 +24,7 @@ public class Adivinar : MonoBehaviour
 
     void FinalJuego()
     {
-        if (tiempoTotal >= 20f)
+        if (tiempoTotal >= 40f)
         {
             Time.timeScale = 0;
             if (Input.GetKeyDown(KeyCode.R))
@@ -39,66 +40,74 @@ public class Adivinar : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            if (imagen.sprite == platano) //Elige la primera opcion (Triangulo)
+            if (imagen.sprite == platano)
             {
                 puntuacion++;
-                AleatorizarImagenes();
-                tiempo = 0;
+                acierto.SetActive(true);
+                StartCoroutine(EsperarAcierto());
+                StopCoroutine(EsperarAcierto());
             }
             else
             {
                 puntuacion--;
-                AleatorizarImagenes();
-                tiempo = 0;
+                error.SetActive(true);
+                StartCoroutine(EsperarError());
+                StopCoroutine(EsperarError());
             }
         }
         
 
-        if (Input.GetKeyDown(KeyCode.UpArrow)) //Elige la segunda opcion (Circulo)
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             if (imagen.sprite == sandia)
             {
                 puntuacion++;
-                AleatorizarImagenes();
-                tiempo = 0;
+                acierto.SetActive(true);
+                StartCoroutine(EsperarAcierto());
+                StopCoroutine(EsperarAcierto());
             }
             else
             {
                 puntuacion--;
-                AleatorizarImagenes();
-                tiempo = 0;
+                error.SetActive(true);
+                StartCoroutine(EsperarError());
+                StopCoroutine(EsperarError());
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow)) //Elige la tercera opcion (Cuadrado)
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             if (imagen.sprite == manzana)
             {
                 puntuacion++;
-                AleatorizarImagenes();
-                tiempo = 0;
+                acierto.SetActive(true);
+                StartCoroutine(EsperarAcierto());
+                StopCoroutine(EsperarAcierto());
             }
             else
             {
                 puntuacion--;
-                AleatorizarImagenes();
-                tiempo = 0;
+                error.SetActive(true);
+                StartCoroutine(EsperarError());
+                StopCoroutine(EsperarError());
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.DownArrow)) //Elige la cuarta opcion (Mierda Pura)
+        if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             if (imagen.sprite == platanoPodrido || imagen.sprite == manzanaPodrida || imagen.sprite == sandiaPodrida || imagen.sprite == lata)
             {
                 puntuacion++;
-                AleatorizarImagenes();
-                tiempo = 0;
+                acierto.SetActive(true);
+                StartCoroutine(EsperarAcierto());
+                StopCoroutine(EsperarAcierto());
             }
             else
             {
                 puntuacion--;
-                AleatorizarImagenes();
-                tiempo = 0;
+                error.SetActive(true);
+                StartCoroutine(EsperarError());
+                StopCoroutine(EsperarError());
             }
         }
     }
@@ -115,6 +124,9 @@ public class Adivinar : MonoBehaviour
         imagenes[4] = manzanaPodrida;
         imagenes[5] = sandiaPodrida;
         imagenes[6] = lata;
+
+        error.SetActive(false);
+        acierto.SetActive(false);
     }
 
     void Update()
@@ -134,5 +146,21 @@ public class Adivinar : MonoBehaviour
         }
 
         FinalJuego();
+    }
+
+    IEnumerator EsperarError()
+    {
+        yield return new WaitForSeconds(0.5f);
+        error.SetActive(false);
+        AleatorizarImagenes();
+        tiempo = 0;
+    }
+
+    IEnumerator EsperarAcierto()
+    {
+        yield return new WaitForSeconds(0.5f);
+        acierto.SetActive(false);
+        AleatorizarImagenes();
+        tiempo = 0;
     }
 }

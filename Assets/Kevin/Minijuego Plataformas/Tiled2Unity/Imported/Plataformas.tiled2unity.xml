@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 13/08/2018 1:19:37-->
+<!--Last exported: 16/08/2018 14:36:57-->
 <Tiled2Unity version="1.0.13.2">
   <AssignMaterial mesh="Plataformas_mesh_0001" material="grassHillLeft" />
   <AssignMaterial mesh="Plataformas_mesh_0002" material="grassMid" />

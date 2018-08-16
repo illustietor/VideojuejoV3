@@ -22,7 +22,7 @@ public class Mini_Moverse : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Cubo"))
+        if (other.gameObject.CompareTag("Zanahoria"))
         {
             Time.timeScale = 0;
             Debug.Log("Has perdido");
