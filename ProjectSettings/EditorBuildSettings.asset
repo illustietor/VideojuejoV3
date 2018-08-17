@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Sara/Escenas/JuegoKala.unity
     guid: e173ace41e5ade74f819db20d05c129e
+  - enabled: 1
+    path: Assets/Kevin/Minijuego Moverse/Scenes/Mini_Moverse.unity
+    guid: cb31b33e199b49e488f4667b0e69ff29
   m_configObjects: {}
