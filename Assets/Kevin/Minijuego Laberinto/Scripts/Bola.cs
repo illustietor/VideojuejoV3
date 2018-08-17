@@ -3,28 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Bola : MonoBehaviour {
+    public float velocidad = 5;
 
-    Rigidbody miRigidBody;
-    public float aceleracion = 5;
-
-    private void Awake()
+    void FixedUpdate()
     {
-        miRigidBody = GetComponent<Rigidbody>();
-    }
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
 
-    void Start()
-    {
-    }
-
-    void Update()
-    {
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
-
-        Vector3 direccion = new Vector3(horizontal, 0, vertical);
-
-        direccion.Normalize();
-
-        miRigidBody.AddForce(direccion * aceleracion, ForceMode.Acceleration);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(horizontal * velocidad, vertical * velocidad);
     }
 }
