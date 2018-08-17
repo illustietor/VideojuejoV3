@@ -6,6 +6,10 @@ using UnityEngine.UI;
 
 public class ToposNuevo : MonoBehaviour {
 
+    bool ponerPausa = true;
+    public GameObject menuPausaMj;
+    public GameObject menuFinalMj;
+
     public enum Topos
     {
         topoArriba,
@@ -18,17 +22,22 @@ public class ToposNuevo : MonoBehaviour {
     public Sprite topoFuera, topoGolpeado, topoEscondido;
 
     public int puntuacion;
+    public int puntuaciónParaGanar = 20;
 
     public float tiempoMinimoAparecer, tiempoMaximoAparecer;
     public float tiempoMinimoDesaparecer , tiempoMaximoDesaparecer;
     public float tiempoMaximoGolpeado;
     public float tiempoTotal;
+    public float tiempoDeJuego = 30F;
+
     float[] tiempoRandomAparecer;
     float[] tiempoRandomDesaparecer;
     float[] tiempoActual;
 
 	// Use this for initialization
 	void Start () {
+
+        Time.timeScale = 1;
         //coroutineTopoArriba = StartCoroutine(AparecerYDesaparecerTopo(topoArriba));
         //coroutineTopoAbajo = StartCoroutine(AparecerYDesaparecerTopo(topoAbajo));
         //coroutineTopoDerecha = StartCoroutine(AparecerYDesaparecerTopo(topoDerecha));
@@ -44,32 +53,26 @@ public class ToposNuevo : MonoBehaviour {
 
     void FinalJuego()
     {
-        if (tiempoTotal > 30f && puntuacion < 30)
+        if (tiempoTotal > tiempoDeJuego && puntuacion < puntuaciónParaGanar)
         {
+            ponerPausa = false;
             Time.timeScale = 0;
             topo[0].sprite = topoEscondido;
             topo[1].sprite = topoEscondido;
             topo[2].sprite = topoEscondido;
             topo[3].sprite = topoEscondido;
+            menuFinalMj.SetActive(true);
         }
 
-        if (tiempoTotal < 30f && puntuacion >= 30)
+        if (tiempoTotal < tiempoDeJuego && puntuacion >= puntuaciónParaGanar)
         {
+            ponerPausa = false;
             Time.timeScale = 0;
             topo[0].sprite = topoGolpeado;
             topo[1].sprite = topoGolpeado;
             topo[2].sprite = topoGolpeado;
             topo[3].sprite = topoGolpeado;
-        }
-    }
-
-    public void RestartJuego()
-    {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.name);
-            Time.timeScale = 1;
+            menuFinalMj.SetActive(true);
         }
     }
 
@@ -83,6 +86,12 @@ public class ToposNuevo : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         tiempoTotal += Time.deltaTime;
+        Debug.Log(tiempoTotal);
+
+        if (Input.GetKeyDown(KeyCode.P) && ponerPausa)
+        {
+            PausaJuego();
+        }
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && topo[(int)Topos.topoArriba].sprite == topoFuera)
         {
@@ -138,26 +147,13 @@ public class ToposNuevo : MonoBehaviour {
         }
 
         FinalJuego();
-        RestartJuego();
     }
 
-    //IEnumerator AparecerYDesaparecerTopo(Image topo)
-    //{
-    //    topo.sprite = topoEscondido;
-    //    while (true) {
-    //        if (topo == topoArriba) Debug.Log("TopoArriba y me ejecuto");
-    //        yield return new WaitForSeconds(Random.Range(4f, 7f));
-    //        topo.sprite = topoFuera;
-    //        yield return new WaitForSeconds(Random.Range(4f, 7f));
-    //        topo.sprite = topoEscondido;
-    //    }
-    //}
+    public void PausaJuego()
+    {
+        Time.timeScale = 0;
+        menuPausaMj.SetActive(true);
+        Debug.Log("Juego Pausado");
 
-    //IEnumerator TopoGolpeado(Image topo)
-    //{
-    //    topo.sprite = topoGolpeado;
-    //    Debug.Log("Coroutina parada");
-    //    yield return new WaitForSeconds(1f);
-    //    StartCoroutine(AparecerYDesaparecerTopo(topo));
-    //}
+    }
 }

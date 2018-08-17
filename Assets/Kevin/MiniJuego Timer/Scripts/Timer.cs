@@ -15,6 +15,7 @@ public class Timer : MonoBehaviour {
     public float tiempo;
 
 	void Start () {
+        Time.timeScale = 1;
         Temporizador();
     }
 	
