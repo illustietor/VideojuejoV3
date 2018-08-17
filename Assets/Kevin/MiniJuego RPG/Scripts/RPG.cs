@@ -106,6 +106,8 @@ public class RPG : MonoBehaviour {
 
     void Start()
     {
+        Time.timeScale = 1;
+
         //Al inicio del juego se activa una imagen
 
         imagenes[0] = triangulo;
