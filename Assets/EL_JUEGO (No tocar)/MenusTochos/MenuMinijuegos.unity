@@ -418,7 +418,7 @@ GameObject:
   - component: {fileID: 116456499}
   - component: {fileID: 116456498}
   m_Layer: 5
-  m_Name: NombreMJ_Button (7)
+  m_Name: Revolveres_Button (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -532,7 +532,7 @@ GameObject:
   - component: {fileID: 141406474}
   - component: {fileID: 141406473}
   m_Layer: 5
-  m_Name: NombreMJ_Button (4)
+  m_Name: MJLabyrinth_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -826,7 +826,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Nombre del juego
+  m_text: Un pulso contra Hache
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -894,10 +894,10 @@ MonoBehaviour:
   m_margin: {x: 121.27, y: 12.468816, z: 10.0939, w: 77.782036}
   m_textInfo:
     textComponent: {fileID: 159012843}
-    characterCount: 16
+    characterCount: 21
     spriteCount: 0
-    spaceCount: 2
-    wordCount: 3
+    spaceCount: 3
+    wordCount: 4
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -981,7 +981,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Nombre del juego
+  m_text: "Duelo de rev\xF3lveres"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1049,7 +1049,7 @@ MonoBehaviour:
   m_margin: {x: 121.27, y: 12.468816, z: 10.0939, w: 77.782036}
   m_textInfo:
     textComponent: {fileID: 211796009}
-    characterCount: 16
+    characterCount: 19
     spriteCount: 0
     spaceCount: 2
     wordCount: 3
@@ -1452,8 +1452,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "Peque\xF1a descripci\xF3n de qu\xE9 va el juego y cu\xE1l es el objetivo
-    o la mec\xE1nica principal, etc..."
+  m_text: "Despl\xE1zate con las flechas del teclado para recorrer los pasillos y
+    escapar del laberinto."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1521,10 +1521,10 @@ MonoBehaviour:
   m_margin: {x: 121.27, y: 42.417786, z: 30.55235, w: 12.140842}
   m_textInfo:
     textComponent: {fileID: 291391960}
-    characterCount: 92
+    characterCount: 90
     spriteCount: 0
-    spaceCount: 16
-    wordCount: 17
+    spaceCount: 13
+    wordCount: 14
     linkCount: 0
     lineCount: 3
     pageCount: 1
@@ -1911,14 +1911,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.49676505, g: 0.8301887, b: 0.3250267, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: c6201a33120453c44ae840c1962f1e2b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2187,14 +2187,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: b92f424f7c14fe342a0f2367faa83600, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2677,8 +2677,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "Peque\xF1a descripci\xF3n de qu\xE9 va el juego y cu\xE1l es el objetivo
-    o la mec\xE1nica principal, etc..."
+  m_text: "\xA1Que bien, llueven zanahorias!\n\xA1PERO SON GIGANTESCAS!\nEsqu\xEDvalas
+    para que no te aplasten."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2746,10 +2746,10 @@ MonoBehaviour:
   m_margin: {x: 121.27, y: 42.417786, z: 30.55235, w: 12.140842}
   m_textInfo:
     textComponent: {fileID: 560535412}
-    characterCount: 92
+    characterCount: 89
     spriteCount: 0
-    spaceCount: 16
-    wordCount: 17
+    spaceCount: 12
+    wordCount: 13
     linkCount: 0
     lineCount: 3
     pageCount: 1
@@ -2999,7 +2999,7 @@ GameObject:
   - component: {fileID: 624058345}
   - component: {fileID: 624058344}
   m_Layer: 5
-  m_Name: NombreMJ_Button (8)
+  m_Name: RPG_Button (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3155,8 +3155,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "Peque\xF1a descripci\xF3n de qu\xE9 va el juego y cu\xE1l es el objetivo
-    o la mec\xE1nica principal, etc..."
+  m_text: "\xA1Ad\xE9ntrate en un asombroso mundo de fantas\xEDa y vive una incre\xEDble
+    aventura! \xBFComo afrontar\xE1s las advesidades que encuentres en tu camino?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3183,8 +3183,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 14.87
+  m_fontSizeBase: 14.87
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3201,7 +3201,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 113
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -3224,12 +3224,12 @@ MonoBehaviour:
   m_margin: {x: 121.27, y: 42.417786, z: 30.55235, w: 12.140842}
   m_textInfo:
     textComponent: {fileID: 632028919}
-    characterCount: 92
+    characterCount: 137
     spriteCount: 0
-    spaceCount: 16
-    wordCount: 17
+    spaceCount: 20
+    wordCount: 21
     linkCount: 0
-    lineCount: 3
+    lineCount: 4
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -3509,7 +3509,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Nombre del juego
+  m_text: RPG Adventure
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3577,10 +3577,10 @@ MonoBehaviour:
   m_margin: {x: 121.27, y: 12.468816, z: 10.0939, w: 77.782036}
   m_textInfo:
     textComponent: {fileID: 743432934}
-    characterCount: 16
+    characterCount: 13
     spriteCount: 0
-    spaceCount: 2
-    wordCount: 3
+    spaceCount: 1
+    wordCount: 2
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -3657,14 +3657,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.49676505, g: 0.8301887, b: 0.3250267, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 6410682fc04bfc24e913a46da1e7f9e8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3882,14 +3882,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.49676505, g: 0.8301887, b: 0.3250267, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: fda9fe419e76b064bbd0c418e94fac0f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3951,14 +3951,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.49676505, g: 0.8301887, b: 0.3250267, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 457a1678da14f9940949d108e027c269, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4662,8 +4662,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -146.8, y: -6.5}
-  m_SizeDelta: {x: 181.01, y: 115.86}
+  m_AnchoredPosition: {x: -145.9, y: -0.000078201}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1200249569
 MonoBehaviour:
@@ -4685,7 +4685,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a618202f58bc1d1459943f8ef3798bbe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0515bcbfc22093845a809618718cbf34, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4972,7 +4972,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Nombre del juego
+  m_text: Labyrinth
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5040,10 +5040,10 @@ MonoBehaviour:
   m_margin: {x: 121.27, y: 12.468816, z: 10.0939, w: 77.782036}
   m_textInfo:
     textComponent: {fileID: 1428218055}
-    characterCount: 16
+    characterCount: 9
     spriteCount: 0
-    spaceCount: 2
-    wordCount: 3
+    spaceCount: 0
+    wordCount: 1
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -5422,8 +5422,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "Peque\xF1a descripci\xF3n de qu\xE9 va el juego y cu\xE1l es el objetivo
-    o la mec\xE1nica principal, etc..."
+  m_text: "A las doce en punto.\nFrente al desierto.\nEl primero en disparar tras
+    la se\xF1al gana.\nNo olvides tu rev\xF3lver."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5450,8 +5450,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 14.16
+  m_fontSizeBase: 14.16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5491,12 +5491,12 @@ MonoBehaviour:
   m_margin: {x: 121.27, y: 42.417786, z: 30.55235, w: 12.140842}
   m_textInfo:
     textComponent: {fileID: 1595167205}
-    characterCount: 92
+    characterCount: 107
     spriteCount: 0
-    spaceCount: 16
-    wordCount: 17
+    spaceCount: 19
+    wordCount: 20
     linkCount: 0
-    lineCount: 3
+    lineCount: 4
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -5712,7 +5712,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 291.6, y: -29.7}
+  m_AnchoredPosition: {x: 291.6, y: -29.699951}
   m_SizeDelta: {x: -640.7, y: -112.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1604053375
@@ -5928,7 +5928,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1707974489}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -5981,14 +5981,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.49676505, g: 0.8301887, b: 0.3250267, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 4749dfbf0423a994e8b646f481fcb85b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6038,7 +6038,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -20.965027}
+  m_AnchoredPosition: {x: 0, y: -20.964966}
   m_SizeDelta: {x: 0, y: 41.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1803654404
@@ -6129,8 +6129,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "Estas esperando a tu waifu en la feria de tu pueblo... lo que pasara a
-    continuaci\xF3n te sorprender\xE1."
+  m_text: "Estas esperando a tu waifu en la feria de tu pueblo... lo que pasar\xE1
+    a continuaci\xF3n te sorprender\xE1."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6242,8 +6242,9 @@ GameObject:
   - component: {fileID: 1808261188}
   - component: {fileID: 1808261187}
   - component: {fileID: 1808261186}
+  - component: {fileID: 1808261189}
   m_Layer: 5
-  m_Name: NombreMJ_Button (6)
+  m_Name: PulsoHacheMJ_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6345,6 +6346,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1808261184}
   m_CullTransparentMesh: 0
+--- !u!114 &1808261189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1808261184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a7ae4941482c1489d8a25adec58df6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escenaDestino: {fileID: 0}
 --- !u!1 &1821696984
 GameObject:
   m_ObjectHideFlags: 0
@@ -6392,14 +6405,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.49676505, g: 0.8301887, b: 0.3250267, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 18c4edd4ec186fe458d7231c54080e66, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6537,8 +6550,9 @@ GameObject:
   - component: {fileID: 2019885875}
   - component: {fileID: 2019885874}
   - component: {fileID: 2019885873}
+  - component: {fileID: 2019885876}
   m_Layer: 5
-  m_Name: NombreMJ_Button (5)
+  m_Name: LluviaZanahoriasMJ_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6603,7 +6617,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2019885874}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2019885876}
+        m_MethodName: CargarEscenaConReferenciaActual
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2019885874
@@ -6640,6 +6665,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2019885871}
   m_CullTransparentMesh: 0
+--- !u!114 &2019885876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2019885871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a7ae4941482c1489d8a25adec58df6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escenaDestino: {fileID: 102900000, guid: cb31b33e199b49e488f4667b0e69ff29, type: 3}
 --- !u!1 &2042340939
 GameObject:
   m_ObjectHideFlags: 0
@@ -6806,7 +6843,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Nombre del juego
+  m_text: Lluvia de zanahorias
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6874,7 +6911,7 @@ MonoBehaviour:
   m_margin: {x: 121.27, y: 12.468816, z: 10.0939, w: 77.782036}
   m_textInfo:
     textComponent: {fileID: 2063063467}
-    characterCount: 16
+    characterCount: 20
     spriteCount: 0
     spaceCount: 2
     wordCount: 3
@@ -6961,8 +6998,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "Peque\xF1a descripci\xF3n de qu\xE9 va el juego y cu\xE1l es el objetivo
-    o la mec\xE1nica principal, etc..."
+  m_text: "Hernesto te ha retado a un pulso.\n\xBFTe sientes capaz de ganarle?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7030,12 +7066,12 @@ MonoBehaviour:
   m_margin: {x: 121.27, y: 42.417786, z: 30.55235, w: 12.140842}
   m_textInfo:
     textComponent: {fileID: 2073439814}
-    characterCount: 92
+    characterCount: 63
     spriteCount: 0
-    spaceCount: 16
-    wordCount: 17
+    spaceCount: 11
+    wordCount: 12
     linkCount: 0
-    lineCount: 3
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
