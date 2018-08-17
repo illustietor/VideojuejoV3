@@ -42,7 +42,7 @@ public class Timer : MonoBehaviour {
 
     void Pulsar()
     {
-        if (!Go && Input.GetKeyDown(KeyCode.Space) || tiempo >= 0.4f)
+        if (!Go && Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Space) && tiempo >= 0.4f)
         {
             Debug.Log("Has perdido");
             fondo.sprite = playerMuerto;
