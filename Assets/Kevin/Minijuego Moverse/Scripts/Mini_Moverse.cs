@@ -4,12 +4,21 @@ using UnityEngine;
 
 public class Mini_Moverse : MonoBehaviour {
     public Rigidbody miRigidBody;
+    bool ponerPausa = true;
+    public GameObject menuPausaMj;
+    public GameObject menuFinalMj;
 
     void Start () {
 		
 	}
 	
 	void Update () {
+
+        if (Input.GetKeyDown(KeyCode.P) && ponerPausa)
+        {
+            PausaJuego();
+        }
+
         float horizontal = Input.GetAxisRaw("Horizontal");
 
         Vector2 direccion = new Vector2(horizontal, 0);
@@ -24,8 +33,26 @@ public class Mini_Moverse : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Zanahoria"))
         {
-            Time.timeScale = 0;
-            Debug.Log("Has perdido");
+            FinJuego();
+            //Time.timeScale = 0;
+            //Debug.Log("Has perdido");
         }
+    }
+
+    public void PausaJuego()
+    {
+        Time.timeScale = 0;
+        menuPausaMj.SetActive(true);
+        Debug.Log("Juego Pausado");
+
+    }
+
+    public void FinJuego()
+    {
+        ponerPausa = false;
+        Time.timeScale = 0;
+        menuFinalMj.SetActive(true);
+        Debug.Log("Juego Finalizado");
+
     }
 }
