@@ -2263,11 +2263,11 @@ MonoBehaviour:
   m_Content: {fileID: 224347981616488038}
   m_Horizontal: 1
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 2
   m_Elasticity: 0.1
-  m_Inertia: 1
+  m_Inertia: 0
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 75
   m_Viewport: {fileID: 0}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 114228894113399316}
@@ -2572,8 +2572,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114246370504918612}
   m_HandleRect: {fileID: 224879047864344484}
   m_Direction: 2
-  m_Value: 0.0048013935
-  m_Size: 0.15058786
+  m_Value: 1
+  m_Size: 0.15466219
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4551,7 +4551,7 @@ MonoBehaviour:
   claveCorrecta: 0
   inputTexto: {fileID: 114429138119872874}
   placeholder: {fileID: 114022128899755230}
-  clave: 1;
+  clave: '''1'';'
   pista: "\xBFCuantos caracteres caben en un char?"
 --- !u!114 &114523009039669726
 MonoBehaviour:
@@ -6528,7 +6528,7 @@ MonoBehaviour:
   claveCorrecta: 0
   inputTexto: {fileID: 114882352110837504}
   placeholder: {fileID: 114690644270113184}
-  clave: 3.14;
+  clave: 3.14F;
   pista: "\xBFQue n\xFAmero es PI con sus dos primeros decimales?"
 --- !u!114 &114821278560889310
 MonoBehaviour:
@@ -6877,7 +6877,7 @@ MonoBehaviour:
   claveCorrecta: 0
   inputTexto: {fileID: 114821278560889310}
   placeholder: {fileID: 114583023454096858}
-  clave: texto;
+  clave: '"texto";'
   pista: "\xBFQue puedes introducir en un string?"
 --- !u!114 &114882352110837504
 MonoBehaviour:
@@ -8265,7 +8265,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.00003471112, y: 768.9685}
+  m_AnchoredPosition: {x: 0.000004200718, y: -1113.3698}
   m_SizeDelta: {x: 721.5, y: 2226.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224377816432577438
@@ -8597,7 +8597,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.0000000085313, y: 739.92004}
+  m_AnchoredPosition: {x: -0.0000000085313, y: -1084.04}
   m_SizeDelta: {x: 30, y: 2168.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224565285398753300
@@ -9061,8 +9061,8 @@ RectTransform:
   m_Father: {fileID: 224299463799825428}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.004078362}
-  m_AnchorMax: {x: 1, y: 0.15466626}
+  m_AnchorMin: {x: 0, y: 0.84533775}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
