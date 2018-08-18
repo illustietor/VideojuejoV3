@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33694536749128166}
   - component: {fileID: 23271647960974298}
   - component: {fileID: 114354120487178566}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Blanco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4912373332151480}
   - component: {fileID: 114206139044432762}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Laberinto 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4654053818728482}
   - component: {fileID: 114886683236780260}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Fondo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2309,7 +2309,7 @@ GameObject:
   - component: {fileID: 60979754993268182}
   - component: {fileID: 60455158277488076}
   - component: {fileID: 60852010999068676}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2327,7 +2327,7 @@ GameObject:
   - component: {fileID: 33798767579364758}
   - component: {fileID: 23524952657730806}
   - component: {fileID: 114125419345348402}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Negro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2343,7 +2343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4103463920541530}
   - component: {fileID: 114689477987654188}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Paredes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2425,8 +2425,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1410267195921322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35.7, y: 21.99, z: 25.9}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4654053818728482}
   - {fileID: 4103463920541530}

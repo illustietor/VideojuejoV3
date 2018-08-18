@@ -884,6 +884,11 @@ Prefab:
       propertyPath: m_Value
       value: 0.99999994
       objectReference: {fileID: 0}
+    - target: {fileID: 224879047864344484, guid: bf82843f7feb447468c83af5b3cfef31,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.8453376
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf82843f7feb447468c83af5b3cfef31, type: 2}
   m_IsPrefabAsset: 0
