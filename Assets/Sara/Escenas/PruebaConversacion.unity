@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -212,9 +212,7 @@ MonoBehaviour:
   nameColor: {r: 0.3737985, g: 0.4096335, b: 0.754717, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: 2fe79a8e8cec61f43aae1554dee548d6, type: 3}
-  - {fileID: 21300000, guid: 77574215deaa4924abe1bca7b0f5d10e, type: 3}
-  - {fileID: 21300000, guid: f5e28605067f8f1419a11949a9ea3bee, type: 3}
+  - {fileID: 21300000, guid: 64d566d285c19944fada1838d3e7642a, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -356,6 +354,66 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 22410276, guid: c6289d5f8fa843145a2355af9cb09719, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 22410276, guid: c6289d5f8fa843145a2355af9cb09719, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 22410270, guid: c6289d5f8fa843145a2355af9cb09719, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 22410280, guid: c6289d5f8fa843145a2355af9cb09719, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 22410272, guid: c6289d5f8fa843145a2355af9cb09719, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 22410278, guid: c6289d5f8fa843145a2355af9cb09719, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 22410270, guid: c6289d5f8fa843145a2355af9cb09719, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 22410280, guid: c6289d5f8fa843145a2355af9cb09719, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 22410272, guid: c6289d5f8fa843145a2355af9cb09719, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 22410278, guid: c6289d5f8fa843145a2355af9cb09719, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 22410270, guid: c6289d5f8fa843145a2355af9cb09719, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -1263
+      objectReference: {fileID: 0}
+    - target: {fileID: 22410276, guid: c6289d5f8fa843145a2355af9cb09719, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -1263
+      objectReference: {fileID: 0}
+    - target: {fileID: 22410280, guid: c6289d5f8fa843145a2355af9cb09719, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -1263
+      objectReference: {fileID: 0}
+    - target: {fileID: 22410272, guid: c6289d5f8fa843145a2355af9cb09719, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -1263
+      objectReference: {fileID: 0}
+    - target: {fileID: 22410278, guid: c6289d5f8fa843145a2355af9cb09719, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -1263
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6289d5f8fa843145a2355af9cb09719, type: 2}
   m_IsPrefabAsset: 0
@@ -477,7 +535,7 @@ MonoBehaviour:
   nameColor: {r: 0.8584906, g: 0.44139376, b: 0.79730827, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: dd8f9165ad3386e4a8957939793a5bdd, type: 3}
+  - {fileID: 21300000, guid: 2814fab373a25e54c8d5bf49096bf3f3, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -566,8 +624,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1625288504}
-  selectedCommands: []
+  - {fileID: 1625288497}
+  selectedCommands:
+  - {fileID: 1625288500}
   variables: []
   description: 
   stepPause: 0
@@ -718,7 +777,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 532081771}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 77574215deaa4924abe1bca7b0f5d10e, type: 3}
+  portrait: {fileID: 21300000, guid: 64d566d285c19944fada1838d3e7642a, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -793,7 +852,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1303753959}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: dd8f9165ad3386e4a8957939793a5bdd, type: 3}
+  portrait: {fileID: 21300000, guid: 2814fab373a25e54c8d5bf49096bf3f3, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -895,7 +954,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 532081771}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: f5e28605067f8f1419a11949a9ea3bee, type: 3}
+  portrait: {fileID: 21300000, guid: 64d566d285c19944fada1838d3e7642a, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -997,7 +1056,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1303753959}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: dd8f9165ad3386e4a8957939793a5bdd, type: 3}
+  portrait: {fileID: 21300000, guid: 2814fab373a25e54c8d5bf49096bf3f3, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -1099,7 +1158,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 532081771}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: f5e28605067f8f1419a11949a9ea3bee, type: 3}
+  portrait: {fileID: 21300000, guid: 64d566d285c19944fada1838d3e7642a, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 0}
@@ -1201,7 +1260,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1303753959}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: dd8f9165ad3386e4a8957939793a5bdd, type: 3}
+  portrait: {fileID: 21300000, guid: 2814fab373a25e54c8d5bf49096bf3f3, type: 3}
   offset: 0
   fromPosition: {fileID: 922162722}
   toPosition: {fileID: 1286988894}
@@ -1277,7 +1336,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 532081771}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 2fe79a8e8cec61f43aae1554dee548d6, type: 3}
+  portrait: {fileID: 21300000, guid: 64d566d285c19944fada1838d3e7642a, type: 3}
   offset: 0
   fromPosition: {fileID: 1735834112}
   toPosition: {fileID: 1993744553}
