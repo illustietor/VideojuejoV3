@@ -8,8 +8,22 @@ public class Cubitos : MonoBehaviour {
     public GameObject player;
     public GameObject objetivo;
 
+    bool ponerPausa = true;
+    public GameObject menuPausaMj;
+    public GameObject menuFinalMj;
+
+    void Start()
+    {
+        Time.timeScale = 1;
+    }
+
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P) && ponerPausa)
+        {
+            PausaJuego();
+        }
+
         float translation = Input.GetAxis("Vertical") * speed;
         float straffe = Input.GetAxis("Horizontal") * speed;
         translation *= Time.deltaTime;
@@ -24,12 +38,30 @@ public class Cubitos : MonoBehaviour {
         objetivo.GetComponent<MeshRenderer>().material.color = new Color(0f, 255f, 0f);
 
         StartCoroutine(Esperar());
-        StopCoroutine(Esperar());
+        //StopCoroutine(Esperar());
     }
 
     IEnumerator Esperar()
     {
         yield return new WaitForSeconds(0.5f);
-        Time.timeScale = 0;
+        FinJuego();
     }
+
+    public void PausaJuego()
+    {
+        Time.timeScale = 0;
+        menuPausaMj.SetActive(true);
+        Debug.Log("Juego Pausado");
+
+    }
+
+    public void FinJuego()
+    {
+        ponerPausa = false;
+        Time.timeScale = 0;
+        menuFinalMj.SetActive(true);
+        Debug.Log("Juego Finalizado");
+
+    }
+
 }

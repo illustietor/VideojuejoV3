@@ -8,9 +8,10 @@ public class Mini_Moverse : MonoBehaviour {
     public GameObject menuPausaMj;
     public GameObject menuFinalMj;
 
-    void Start () {
-		
-	}
+    void Start ()
+    {
+        Time.timeScale = 1;
+    }
 	
 	void Update () {
 

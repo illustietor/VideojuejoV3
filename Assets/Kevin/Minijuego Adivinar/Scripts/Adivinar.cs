@@ -6,6 +6,10 @@ using UnityEngine.UI;
 
 public class Adivinar : MonoBehaviour
 {
+    bool ponerPausa = true;
+    public GameObject menuPausaMj;
+    public GameObject menuFinalMj;
+
     public GameObject error;
     public GameObject acierto;
     public Image imagen;
@@ -22,19 +26,19 @@ public class Adivinar : MonoBehaviour
         imagen.sprite = imagenes[Random.Range(0, imagenes.Length)];
     }
 
-    void FinalJuego()
-    {
-        if (tiempoTotal >= 40f)
-        {
-            Time.timeScale = 0;
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                Scene scene = SceneManager.GetActiveScene();
-                SceneManager.LoadScene(scene.name);
-                Time.timeScale = 1;
-            }
-        }
-    }
+    //void FinalJuego()
+    //{
+    //    if (tiempoTotal >= 40f)
+    //    {
+    //        Time.timeScale = 0;
+    //        if (Input.GetKeyDown(KeyCode.R))
+    //        {
+    //            Scene scene = SceneManager.GetActiveScene();
+    //            SceneManager.LoadScene(scene.name);
+    //            Time.timeScale = 1;
+    //        }
+    //    }
+    //}
 
     void ElegirOpciones()
     {
@@ -115,6 +119,8 @@ public class Adivinar : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1;
+
         //Al inicio del juego se activa una imagen
 
         imagenes[0] = platano;
@@ -131,6 +137,11 @@ public class Adivinar : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P) && ponerPausa)
+        {
+            PausaJuego();
+        }
+
         tiempo += Time.deltaTime;
         tiempoTotal += Time.deltaTime;
 
@@ -145,7 +156,13 @@ public class Adivinar : MonoBehaviour
             ElegirOpciones();
         }
 
-        FinalJuego();
+        //FinalJuego();
+
+        if (tiempoTotal >= 40f)
+        {
+            FinJuego();
+        }
+
     }
 
     IEnumerator EsperarError()
@@ -163,4 +180,22 @@ public class Adivinar : MonoBehaviour
         AleatorizarImagenes();
         tiempo = 0;
     }
+
+    public void PausaJuego()
+    {
+        Time.timeScale = 0;
+        menuPausaMj.SetActive(true);
+        Debug.Log("Juego Pausado");
+
+    }
+
+    public void FinJuego()
+    {
+        ponerPausa = false;
+        Time.timeScale = 0;
+        menuFinalMj.SetActive(true);
+        Debug.Log("Juego Finalizado");
+
+    }
+
 }

@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ScriptSalirJuego : MonoBehaviour {
+public class SalirJuegoKala : MonoBehaviour {
 
-	public void VolverUltimaEscena ()
-    {
+	// Use this for initialization
+	void Start () {
         SceneManager.LoadScene(PlayerPrefs.GetString("EscenaQueCargaJuego"));
         Time.timeScale = 1;
     }
+	
 }
