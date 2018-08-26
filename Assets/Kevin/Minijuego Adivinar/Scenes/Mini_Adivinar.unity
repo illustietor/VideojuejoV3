@@ -227,8 +227,7 @@ RectTransform:
 --- !u!114 &265850076
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114805902684173312, guid: afd5e8b4e5817074c96d53a0c163cdb9,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 265850074}
   m_Enabled: 1
@@ -236,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c19ed72ae0d174096427bd61f13cbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escenaReiniciar: {fileID: 102900000, guid: 882aabce11244f54d9509541a35842f6, type: 3}
+  escenaReiniciar: 3
 --- !u!114 &265850077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2595,8 +2594,7 @@ RectTransform:
 --- !u!114 &1222032166
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114853861818922238, guid: 1739d5d3faaac8e4cb43b0ed907a18fc,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1222032164}
   m_Enabled: 1
@@ -2604,7 +2602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c19ed72ae0d174096427bd61f13cbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escenaReiniciar: {fileID: 102900000, guid: 882aabce11244f54d9509541a35842f6, type: 3}
+  escenaReiniciar: 3
 --- !u!114 &1222032167
 MonoBehaviour:
   m_ObjectHideFlags: 0

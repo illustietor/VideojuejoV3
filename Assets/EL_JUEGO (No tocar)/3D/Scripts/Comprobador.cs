@@ -1,8 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Comprobador : MonoBehaviour {
+
+public class Comprobador : MonoBehaviour
+{
     public GameObject comprobador;
     public GameObject FPSController;
     public GameObject cameraControler;
@@ -19,6 +22,12 @@ public class Comprobador : MonoBehaviour {
         {
             FPSController.GetComponent<FirstPersonController>().enabled = false;
             cameraControler.GetComponent<CameraController>().enabled = false;
+            OnMouseDown();
         }
+    }
+
+    void OnMouseDown()
+    {
+        return;
     }
 }

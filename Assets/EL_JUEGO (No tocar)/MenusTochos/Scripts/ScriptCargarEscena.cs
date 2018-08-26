@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class ScriptCargarEscena : MonoBehaviour {
 
-    public Object CargarEstaEscena;
+    public int CargarEstaEscena;
 
     public void CargarEscena()
     {
         
-        SceneManager.LoadScene(CargarEstaEscena.name);
+        SceneManager.LoadScene(CargarEstaEscena);
     }
 
 }

@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class CargarMinijuegos : MonoBehaviour {
 
-    public Object escenaDestino;
+    public int escenaDestino;
 
 	public void CargarEscenaConReferenciaActual()
     {
         PlayerPrefs.SetString("EscenaQueCargaJuego", SceneManager.GetActiveScene().name);
-        SceneManager.LoadScene(escenaDestino.name);
+        SceneManager.LoadScene(escenaDestino);
     }
 }

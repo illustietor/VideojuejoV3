@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class ScriptReiniciarJuego : MonoBehaviour {
 
-    public Object escenaReiniciar;
+    public int escenaReiniciar;
 
 	public void ReinicarEscena ()
     {
-        SceneManager.LoadScene(escenaReiniciar.name);
+        SceneManager.LoadScene(escenaReiniciar);
         Time.timeScale = 1;
     }
 }

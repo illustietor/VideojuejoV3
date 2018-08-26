@@ -2161,7 +2161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c19ed72ae0d174096427bd61f13cbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escenaReiniciar: {fileID: 102900000, guid: cb31b33e199b49e488f4667b0e69ff29, type: 3}
+  escenaReiniciar: 7
 --- !u!114 &1679243209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3151,7 +3151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c19ed72ae0d174096427bd61f13cbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escenaReiniciar: {fileID: 102900000, guid: cb31b33e199b49e488f4667b0e69ff29, type: 3}
+  escenaReiniciar: 7
 --- !u!114 &2016812861
 MonoBehaviour:
   m_ObjectHideFlags: 0

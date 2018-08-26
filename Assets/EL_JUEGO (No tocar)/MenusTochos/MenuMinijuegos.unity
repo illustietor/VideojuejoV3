@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a7ae4941482c1489d8a25adec58df6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escenaDestino: {fileID: 102900000, guid: 2a3db9e47a230584093446aecd7e6186, type: 3}
+  escenaDestino: 4
 --- !u!1 &30825129
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,7 +853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a7ae4941482c1489d8a25adec58df6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escenaDestino: {fileID: 102900000, guid: 36534a02b6553e149b9e213b6d448615, type: 3}
+  escenaDestino: 8
 --- !u!1 &141406471
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,7 +991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a7ae4941482c1489d8a25adec58df6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escenaDestino: {fileID: 102900000, guid: 4c9e33567e4b3e4429b7e113f0d1f841, type: 3}
+  escenaDestino: 9
 --- !u!1 &152339140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,7 +1129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a7ae4941482c1489d8a25adec58df6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escenaDestino: {fileID: 102900000, guid: e173ace41e5ade74f819db20d05c129e, type: 3}
+  escenaDestino: 6
 --- !u!1 &159012841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1766,8 +1766,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "Parece que tienes algunas frutas podr\xEDdas en el cesto.\nOrgan\xEDzalas
-    por tipo y tira a la basura las que se encuentren en mal estado."
+  m_text: "Parece que tienes algunas frutas podr\xEDdas en el cesto. Organ\xEDzalas
+    por tipo y tira a la basura las que se encuentren en mal estado. CONTROLES: Flechas
+    del teclado."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1794,8 +1795,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 13.5
+  m_fontSizeBase: 13.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1812,7 +1813,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 95
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -1835,10 +1836,10 @@ MonoBehaviour:
   m_margin: {x: 121.27, y: 42.417786, z: 30.55235, w: 12.140842}
   m_textInfo:
     textComponent: {fileID: 212806907}
-    characterCount: 131
+    characterCount: 163
     spriteCount: 0
-    spaceCount: 23
-    wordCount: 24
+    spaceCount: 27
+    wordCount: 28
     linkCount: 0
     lineCount: 4
     pageCount: 1
@@ -2418,7 +2419,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "\xBFA qu\xE9 hemos venido? \xBFPor qu\xE9 hacemos las cosas? \xBFCual es
-    el objetivo? S\xF3lo sabes que puedes moverte."
+    el objetivo? S\xF3lo sabes que puedes moverte (con las flechas del teclado)."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2486,10 +2487,10 @@ MonoBehaviour:
   m_margin: {x: 121.27, y: 42.417786, z: 30.55235, w: 12.140842}
   m_textInfo:
     textComponent: {fileID: 274376116}
-    characterCount: 101
+    characterCount: 131
     spriteCount: 0
-    spaceCount: 17
-    wordCount: 18
+    spaceCount: 22
+    wordCount: 23
     linkCount: 0
     lineCount: 4
     pageCount: 1
@@ -2518,6 +2519,161 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 274376114}
+  m_CullTransparentMesh: 0
+--- !u!1 &275347626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 275347627}
+  - component: {fileID: 275347629}
+  - component: {fileID: 275347628}
+  m_Layer: 5
+  m_Name: Cerrar_Texto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &275347627
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 275347626}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1163264378}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &275347628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 275347626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_text: Programar
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 20.14
+  m_fontSizeBase: 20.14
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_textAlignment: 514
+  m_isAlignmentEnumConverted: 1
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: 0
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_isTextTruncated: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 5, y: 5, z: 5, w: 7.35216}
+  m_textInfo:
+    textComponent: {fileID: 275347628}
+    characterCount: 9
+    spriteCount: 0
+    spaceCount: 0
+    wordCount: 1
+    linkCount: 0
+    lineCount: 1
+    pageCount: 1
+    materialCount: 1
+  m_havePropertiesChanged: 0
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_isInputParsingRequired: 0
+  m_inputSource: 0
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &275347629
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 275347626}
   m_CullTransparentMesh: 0
 --- !u!1 &291391958
 GameObject:
@@ -2573,8 +2729,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "Despl\xE1zate con las flechas del teclado para recorrer los pasillos y
-    escapar del laberinto."
+  m_text: "Despl\xE1zate por los pasillos y escapa de los tres laberintos.\nCONTROLES:
+    Flechas del teclado."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2642,7 +2798,7 @@ MonoBehaviour:
   m_margin: {x: 121.27, y: 42.417786, z: 30.55235, w: 12.140842}
   m_textInfo:
     textComponent: {fileID: 291391960}
-    characterCount: 90
+    characterCount: 92
     spriteCount: 0
     spaceCount: 13
     wordCount: 14
@@ -3685,7 +3841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a7ae4941482c1489d8a25adec58df6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escenaDestino: {fileID: 102900000, guid: c109c16c74bd1ef4e91f98915f298003, type: 3}
+  escenaDestino: 5
 --- !u!1 &459780678
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,7 +3872,7 @@ RectTransform:
   m_Father: {fileID: 499454879}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5535476}
+  m_AnchorMin: {x: 0, y: 0.5536795}
   m_AnchorMax: {x: 1, y: 0.9999638}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -4143,8 +4299,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 459780680}
   m_HandleRect: {fileID: 459780679}
   m_Direction: 2
-  m_Value: 0.9999346
-  m_Size: 0.4464162
+  m_Value: 0.9999347
+  m_Size: 0.4462843
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4364,7 +4520,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "\xA1Que bien, llueven zanahorias!\n\xA1PERO SON GIGANTESCAS!\nEsqu\xEDvalas
-    para que no te aplasten."
+    para que no te aplasten.\nCONTROLES: Flechas del teclado."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4409,7 +4565,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 90
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -4432,12 +4588,12 @@ MonoBehaviour:
   m_margin: {x: 121.27, y: 42.417786, z: 30.55235, w: 12.140842}
   m_textInfo:
     textComponent: {fileID: 560535412}
-    characterCount: 89
+    characterCount: 121
     spriteCount: 0
-    spaceCount: 12
-    wordCount: 13
+    spaceCount: 16
+    wordCount: 17
     linkCount: 0
-    lineCount: 3
+    lineCount: 4
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -5915,7 +6071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a7ae4941482c1489d8a25adec58df6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escenaDestino: {fileID: 102900000, guid: 882aabce11244f54d9509541a35842f6, type: 3}
+  escenaDestino: 3
 --- !u!1 &742479422
 GameObject:
   m_ObjectHideFlags: 0
@@ -8141,7 +8297,7 @@ RectTransform:
   m_Children:
   - {fileID: 85273385}
   m_Father: {fileID: 1558471496}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8245,7 +8401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c9c4ef761eada4d9689e71cdb94d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CargarEstaEscena: {fileID: 102900000, guid: 47b773310bb3c7e48a2b8644ed676e33, type: 3}
+  CargarEstaEscena: 0
 --- !u!1 &1132347170
 GameObject:
   m_ObjectHideFlags: 0
@@ -8418,6 +8574,142 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1147217872}
+  m_CullTransparentMesh: 0
+--- !u!1 &1163264377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1163264378}
+  - component: {fileID: 1163264382}
+  - component: {fileID: 1163264381}
+  - component: {fileID: 1163264380}
+  - component: {fileID: 1163264379}
+  m_Layer: 5
+  m_Name: Programar_Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1163264378
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1163264377}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.99999243, y: 0.99999243, z: 0.99999243}
+  m_Children:
+  - {fileID: 275347627}
+  m_Father: {fileID: 1558471496}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000015259, y: 0.000030517578}
+  m_SizeDelta: {x: 155.49, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1163264379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1163264377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a7ae4941482c1489d8a25adec58df6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escenaDestino: 10
+--- !u!114 &1163264380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1163264377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1163264381}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1163264379}
+        m_MethodName: CargarEscenaConReferenciaActual
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1163264381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1163264377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1163264382
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1163264377}
   m_CullTransparentMesh: 0
 --- !u!1 &1200249567
 GameObject:
@@ -10499,6 +10791,7 @@ RectTransform:
   m_LocalScale: {x: 0.99999946, y: 0.99999946, z: 0.99999946}
   m_Children:
   - {fileID: 1954534586}
+  - {fileID: 1163264378}
   - {fileID: 1131193312}
   m_Father: {fileID: 1015870130}
   m_RootOrder: 1
@@ -10666,8 +10959,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "A las doce en punto.\nFrente al desierto.\nEl primero en disparar tras
-    la se\xF1al gana.\nNo olvides tu rev\xF3lver."
+  m_text: "A las doce en punto frente al desierto.\nEl primero en disparar tras la
+    se\xF1al gana.\nNo olvides tu rev\xF3lver.\nCONTROLES: Barra de espacio."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10694,8 +10987,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 14.16
-  m_fontSizeBase: 14.16
+  m_fontSize: 14.2
+  m_fontSizeBase: 14.2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -10735,10 +11028,10 @@ MonoBehaviour:
   m_margin: {x: 121.27, y: 42.417786, z: 30.55235, w: 12.140842}
   m_textInfo:
     textComponent: {fileID: 1595167205}
-    characterCount: 107
+    characterCount: 135
     spriteCount: 0
-    spaceCount: 19
-    wordCount: 20
+    spaceCount: 23
+    wordCount: 24
     linkCount: 0
     lineCount: 4
     pageCount: 1
@@ -11666,7 +11959,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1707974489}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -12057,7 +12350,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1808261185
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12165,7 +12458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a7ae4941482c1489d8a25adec58df6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escenaDestino: {fileID: 0}
+  escenaDestino: 0
 --- !u!1 &1821696984
 GameObject:
   m_ObjectHideFlags: 0
@@ -12823,7 +13116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a7ae4941482c1489d8a25adec58df6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escenaDestino: {fileID: 102900000, guid: cb31b33e199b49e488f4667b0e69ff29, type: 3}
+  escenaDestino: 7
 --- !u!1 &2042340939
 GameObject:
   m_ObjectHideFlags: 0
